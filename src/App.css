@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  margin: 20px; 
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.form-control {
+  width: 500px;
+}
+
+.form-control:focus {
+  border-color: #FA8800;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FA8800;
+}
+
+.user-form {
+  width: 50%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-right: 1px solid gray;
+  flex-direction: column;
+  display: flex;
+}
+
+header {
+  height: 60px;
+  background-color: #FA8800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-table {
+  flex-direction: column;
+  margin-left: 20px;
+  display: flex;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tr {
+  text-align: center;
+  align-items: center;
+
 }
+
+
+.btn, .btn:focus, .btn:active, .btn:hover {
+  background-color: #FA8800;
+  outline: none !important;
+  box-shadow: none;
+  transition-delay:0.08s;
+  border-color: white;
+}
+
+.text-header {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
+}
+
+.text-register {
+  position: absolute;
+  margin: 100px 200px;
+}
+
+td {
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
+table {
+  table-layout: fixed;
+}
+
